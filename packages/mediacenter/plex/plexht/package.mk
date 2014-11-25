@@ -19,7 +19,7 @@
 ################################################################################
 
 PKG_NAME="plexht"
-PKG_VERSION="`wget -q -O - https://github.com/plexinc/plex-home-theater-public/blob/pht-frodo/plex/ReleaseNotes --no-check-certificate|grep txt| sed 's/.*.txt">//g'|cut -d"<" -f1|sort -Vr|sed 's/\.txt//g'|head -1`"
+PKG_VERSION="`wget -q -O - https://github.com/plexinc/plex-home-theater-public/blob/pht-frodo/plex/ReleaseNotes --no-check-certificate|grep txt| sed 's/.*.txt">//g'|cut -d"<" -f1|sort -nr|sed 's/\.txt//g' | head -1`"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
